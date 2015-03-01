@@ -41,7 +41,7 @@ if __name__ == "__main__":
     with open("macbeth.txt") as f:
         text = f.readlines()
     
-    s = "Eye of newt"
+    s = "all the perfumes"
 
     an, sn, cs, c, d = get_scene_data(text, find_line_number(text, s))
     

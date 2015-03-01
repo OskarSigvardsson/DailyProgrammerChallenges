@@ -28,7 +28,7 @@ First off all, you're going to need a full copy of the play, which you can find 
 
 This version of the play uses consistent formatting, and should be especially easy for computers to parse. I recommen perusing it briefly to get a feel for how it's formatted, but in particular you should notice this: all dialog is indented 4 spaces, and nothing else is. 
 
-Second, you will be given a single line containing a quote that appears once somewhere in the text of the play. You can assume that the quote matches case with the source material. 
+Second, you will be given a single line containing a quote that appears once somewhere in the text of the play. You can assume that the quote matches case with the source material, and that the full quote is contained in a single line. 
 
 ##Output description
 
@@ -56,19 +56,30 @@ All the dialog in the source material is indented 4 spaces. You can choose to ke
 
 ##Input 2
 
-    like a breach in nature
+    all the perfumes
 
 ##Output 2
 
-    Who can be wise, amaz'd, temperate, and furious,
-    Loyal and neutral, in a moment? No man:
-    The expedition of my violent love
-    Outrun the pauser reason. Here lay Duncan,
-    His silver skin lac'd with his golden blood;
-    And his gash'd stabs look'd like a breach in nature
-    For ruin's wasteful entrance: there, the murderers,
-    Steep'd in the colours of their trade, their daggers
-    Unmannerly breech'd with gore: who could refrain,
-    That had a heart to love, and in that heart
-    Courage to make's love known?
+    Here's the smell of the blood still: all the perfumes
+    of Arabia will not sweeten this little hand. Oh, oh, oh!
 
+#Challenge inputs
+
+#Input 1
+
+    break this enterprise
+
+#Input 2
+
+    Yet who would have thought
+
+#Bonus
+
+If you'd like a bit more of challenge, in addition to the full quote, also output some more information: which act and scene the quote appears, all characters with speaking parts in that scene, as well as who spoke the quote. For the second example input, it might look something like this: 
+
+    ACT V
+    SCENE I
+    Characters in scene: LADY MACBETH, DOCTOR, GENTLEWOMAN
+    Spoken by LADY MACBETH:
+        Here's the smell of the blood still: all the perfumes
+        of Arabia will not sweeten this little hand. Oh, oh, oh!
