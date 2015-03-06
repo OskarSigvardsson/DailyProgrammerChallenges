@@ -18,6 +18,7 @@ Notice that the right hand side of the equations make up the chain, and left han
 
 We say that this chain is of length 8, because it took 8 additions to generate it. It is interesting to note that while there are a number of different addition chains of length 8 for the number 84 (another one is [1, 2, 4, 8, 16, 32, 64, 68, 84], for instance), there are no shorter ones. This is as good as we can get. 
 
+
 Your task today is to try and generate addition chains of a given length and last number. 
 
 #Formal inputs & outputs
@@ -31,6 +32,8 @@ It is easy to miss but important to note that the length of the addition chain i
 ##Output description
 
 You will output the entire addition chain, one number per line. Note that while there will be many different addition chains of the given length, you only need to output one of them. 
+
+Note that going by the strict definition of addition chains, they don't necessarily have to be strictly increasing. However, any addition chain that is not strictly increasing can be reordered into one that is, so you can safely assume that all addition chains are increasing. In fact, making this assumption is probably a very good idea! 
 
 #Examples
 
