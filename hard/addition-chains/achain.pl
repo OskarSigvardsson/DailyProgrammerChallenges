@@ -22,10 +22,10 @@ bind_vars(Prev, [Curr|Rest], Target, Index, Length) :-
     member(B, Prev),
     B =< A,
     Curr is A + B,
-    ub(Curr, Ub),
-    Index =< Ub,
+    %ub(Curr, Ub),
+    %Index =< Ub,
     Curr > P1,    
-    Curr =< Target,
+    %Curr =< Target,
     
     Target =< Curr ** (Length - Index + 1),
     
