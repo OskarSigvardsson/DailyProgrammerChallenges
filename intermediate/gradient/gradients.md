@@ -1,21 +1,24 @@
 #Description
 
-One of the most fundamental tools in graphic design is the "gradient": a smooth
-transtion from one color to another. They are remarkably useful and are
-available in virtually every graphic design program and programming library.
-They're even part of CSS nowadays.
+One of the most basic tools in graphic design toolbox is the "gradient": a
+smooth transtion from one color to another. They are remarkably useful and are
+available in virtually every graphic design program and graphic programming
+library, and even natively in design languages like CSS and SVG.
 
-Your task today is to draw one of these wonderful gradients. You are to
-calculate and draw a gradient and then either draw it to the screen or save it
-as an image file. 
+Your task today is to make a program that can generate these wonderful
+gradients, and then either draw it to the screen or save it as an image file.
+You will get pixel dimensions for the size of the gradient, and the two colors
+that the gradient should transition between. 
 
 **NOTE:** As I said, there are many imaging libraries that provide this
-functionality for you, usually in some function called `drawGradient()` or the
-like. You are *strongly encouraged* not to use functions like that, the spirit
-of this challenge is that you should calculate the gradient (and thus the
-individual pixel colors) yourself. This isn't an ironclad rule, though, and if
-you really can't think of any way to do this yourself, then it's fine to submit
-your solution anyway. I encourage you to try, though. 
+functionality for you, usually in some function called `drawGradient()` or
+something similar. You are *strongly encouraged* not to use functions like
+this, the spirit of this challenge is that you should figure out how to
+calculate the gradient (and thus the individual pixel colors) yourself. 
+
+This isn't an ironclad rule, and if you really can't think of any way to do
+this yourself, then it's fine to submit your solution using one of these
+functions. I encourage you to try, though. 
 
 It is, however, perfectly acceptable to use a library to create the image and
 then saving it as an image file.
@@ -31,16 +34,18 @@ the gradient should transition between. The first color should be on the left
 edge of the image, the second color should be on the right edge of the image.
 So, for instance, the input
 
-    500 100 255 255 0 0 0 255
+    500 100 
+    255 255 0 
+    0 0 255
 
-means that you should draw a 500x100 image that transitions from yellow on the
-left side to blue on the right side.
+means that you should draw a 500x100 gradient that transitions from yellow on
+the left side to blue on the right side.
 
 ##Output description
 
 You can either choose to draw your gradient to the screen or save it as an
 image file. You can choose whatever image format you want, though it should
-preferably a loss-less format like PNG. 
+preferably a lossless format like PNG. 
 
 If you don't wish to tangle with libraries that output PNG images, I recommend
 checking out the [Netpbm](http://en.wikipedia.org/wiki/Netpbm) format, which is
@@ -51,7 +56,7 @@ that can help you out.
 Regardless of your chosen method of output, I highly encourage you to upload
 your resulting images to [imgur](http://imgur.com) so that the rest of us can
 see the product of your hard work! If you chose to output your image to the
-screen, lets see a (possibly cropped) screenshot!
+screen, you can take a screenshot and crop the gradient out.
 
 #Example inputs & outputs
 
@@ -76,10 +81,13 @@ colors!
 
 #Bonus
 
-Write a program in brainfuck that produces a 1000x100 sized gradient from Red
-Ochre to British Racing Green. You can hardcode the input values in the code if
-you wish, and you can output the image in whatever format you like (though I
-imagine that using one of the binary Netpbm formats would be the easiest). 
+We often see people solving these problems in weird languages here at /r/dailyprogrammer, and this bonus is for all you crazy people: 
+
+Solve this problem in brainfuck. You don't have to read the values from input,
+you can "hard-code" the input values in your program. You can pick whatever
+colors and dimensions you like, as long as both the width and the height is
+larger than 100 pixels. You can also output the image in whatever format you
+want (I imagine that one of the binary Netpbm formats will be the easiest). 
 
 #Finally
 
