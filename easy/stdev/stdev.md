@@ -1,6 +1,6 @@
 # Description
 
-**Standard deviation** is one of the most basic measurments in statistics. For some collection of values (known as a "population" in statistics), it measures how dispersed the values are. If the standard deviation is high, it means that the values in the population is very spread out; if it's low, it means that the values are tightly clustered around the average, or *mean*, value.
+**Standard deviation** is one of the most basic measurments in statistics. For some collection of values (known as a "population" in statistics), it measures how dispersed those values are. If the standard deviation is high, it means that the values in the population are very spread out; if it's low, it means that the values are tightly clustered around the mean value.
 
 For today's challenge, you will get a list of numbers as input which will serve as your statistical population, and you are then going to calculate the standard deviation of that population. There are statistical packages for many programming languages that can do this for you, but you are highly encouraged not to use them: the spirit of today's challenge is to implement the standard deviation function yourself. 
 
@@ -8,15 +8,15 @@ The following steps describe how to calculate standard deviation for a collectio
 
     5 6 11 13 19 20 25 26 28 37
 
-1. First, calculate the average (or **mean**) of all your values, which is defined as the sum of all the values divided by the total number of values in the population. For our example, the sum of the values is 190 and since there are 10 different values, the average is 190/10 = 19
+1. First, calculate the average (or **mean**) of all your values, which is defined as the sum of all the values divided by the total number of values in the population. For our example, the sum of the values is 190 and since there are 10 different values, the mean value is 190/10 = 19
 
 2. Next, for each value in the population, calculate the difference between it and the mean value, and square that difference. So, in our example, the first value is 5 and the mean 19, so you calculate (5 - 19)^2 which is equal to 196.  For the second value (which is 6), you calculate (6 - 19)^2 which is equal to 169, and so on. 
 
-3. Calculate the sum of all the values from the previous step. For our example, it will be equal to 956.
+3. Calculate the sum of all the values from the previous step. For our example, it will be equal to 196 + 169 + 64 + ... = 956.
 
-3. Divide that sum by the number of items in your population, which for our example is 10, to get 95.9. This value is known as the **variance** of the population, and is equal to the square of the standard deviation. 
+3. Divide that sum by the number of values in your population. This value is known as the **variance** of the population, and is equal to the square of the standard deviation. For our example, the number of values in the population is 10, so the variance is equal to 956/10 = 95.6.
 
-4. Finally, to get standard deviation, simply take the square root of the variance. For our example, sqrt(95.6) ≈ 9.7775. 
+4. Finally, to get standard deviation, take the square root of the variance. For our example, sqrt(95.6) ≈ 9.7775. 
 
 #Formal inputs &amp; outputs
 
