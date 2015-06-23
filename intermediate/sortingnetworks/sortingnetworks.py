@@ -1,4 +1,4 @@
-
+import sys
 
 def chain(it):
     from itertools import chain
@@ -89,9 +89,16 @@ def print_network(network):
     for (a,b) in network:
         print("{} {}".format(a, b))
 
+def read_network():
+    sys.stdin.readline()
+    network = []
+
+    for line in sys.stdin:
+        network.append(tuple(map(int, line.split(" "))))
+
+    return network
 
 if __name__ == "__main__":
-    network = optimal_16_wires()
-    
+    network = read_network()
     print_network(network)
-    #print(check_network(network))
+    print(check_network(network))
